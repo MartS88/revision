@@ -1,34 +1,33 @@
-Installation and Running the Client
+# Installation and Running the Client
 To install dependencies and run the client, follow these steps:
 
-Install dependencies:
+1.**Install dependencies**:
 
 npm install
 
-Install webpack-cli as a dev dependency:
+2.**Install webpack-cli as a dev dependency**:
 
 npm install -D webpack-cli
 
-Run the client:
+3.**Run the client**:
 
 npm run start
 
-Installation and Running the Server
-
+# Installation and Running the Server
 To install dependencies, run database migrations, and start the server, follow these steps:
 
-Install dependencies:
+1.**Install dependencies**:
 
 npm install
 
-Run database migrations:
+2.**Run database migrations**:
 
 npx sequelize-cli db:migrate
 
-Run seeds
+3.**Run seeds**
 
 npx sequelize-cli db:seed:all
 
-Start the server:
+4.**Start the server**:
 
 npm run start
