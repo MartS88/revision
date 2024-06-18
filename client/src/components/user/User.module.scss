@@ -1,0 +1,116 @@
+.user_item {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Prompt";
+
+
+  .user_buttons_block {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      cursor: pointer;
+    }
+
+    .user_title {
+      font-size: 1.5rem;
+      font-family: 'Prompt';
+      font-weight: 400;
+    }
+  }
+
+  .user_info {
+    border-top: 1.5px solid #0000001a;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all .1s ease-in-out;
+
+    .loader_block {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .user_wrapper {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-bottom: 1.5px solid #0000001a;
+
+      .email {
+        font-size: 1rem;
+        font-family: 'Prompt';
+        font-weight: 400;
+      }
+    }
+
+    .img_block {
+      margin-bottom: 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      gap: 100px;
+
+
+      .img_wrapper {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        .popup_block {
+          background: rgba(0, 0, 0, .2);
+          height: 100vh;
+          left: 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .img_title {
+          text-align: center;
+          width: 250px;
+          height: 35px;
+          font-family: 'Prompt';
+          font-weight: 400;
+          font-size: 1rem;
+          color: gray;
+        }
+
+        .star {
+          margin-left: auto;
+          transition: all .2s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        img {
+          border-radius: 0.7rem;
+          cursor: pointer;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            border-radius: 1.5rem;
+          }
+        }
+
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popup_block {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 620px;
+
+
+    .close {
+      color:black;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  }
+}
