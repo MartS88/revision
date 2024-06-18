@@ -1,11 +1,11 @@
 import { Column, DataType, Model, Table, ForeignKey } from 'sequelize-typescript';
 import { ApiProperty } from '@nestjs/swagger';
-import { User } from '../users/user-model';
+
 
 @Table({ tableName: 'albums' })
 export class Album extends Model<Album> {
-    @ApiProperty({ example: 'c2d48df7-23db-4b1b-a6dc-f2cfe13ce88c', description: 'Album ID' })
-    @Column({ type: DataType.UUID, defaultValue: DataType.UUIDV4, primaryKey: true })
+    @ApiProperty({ example: '88c', description: 'Album ID' })
+    @Column({ type: DataType.STRING, defaultValue: DataType.STRING, primaryKey: true })
     albumId: string;
 
     @ApiProperty({ example: 'Title of the album', description: 'Title of the album' })
